@@ -1,0 +1,19 @@
+{
+  "name": "hypebot",
+  "version": "1.0.0",
+  "description": "Chat bot for various Penn Hype Dance Crew group chats",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mantism/HypeBot.git"
+  },
+  "author": "Mikael Mantis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mantism/HypeBot/issues"
+  },
+  "homepage": "https://github.com/mantism/HypeBot#readme"
+}
