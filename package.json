@@ -7,7 +7,9 @@
     "deploy": "claudia create --version dev --region us-east-1 --api-module api",
     "release": "claudia set-version --version production",
     "start": "ntl",
-    "setup-profile": "export AWS_PROFILE=claudia"
+    "setup-profile": "export AWS_PROFILE=claudia",
+    "build": "babel src --out-file bot.js"
+
   },
   "repository": {
     "type": "git",
@@ -21,13 +23,19 @@
   "homepage": "https://github.com/mantism/HypeBot#readme",
   "devDependencies": {
     "aws-sdk": "^2.74.0",
+    "babel-preset-env": "^1.5.2",
     "claudia": "^2.13.0",
     "lodash": "^4.17.4",
     "ntl": "^1.2.0"
   },
   "dependencies": {
     "aws-sdk": "^2.74.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
     "claudia-bot-builder": "^2.15.0",
     "huh": "^2.0.1"
+  },
+  "babel": {
+    "presets": ["env", "es2015"]
   }
 }
