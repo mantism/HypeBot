@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "hypebot-executor",
+    "name": "hypebot",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "mlk1f54wkc",
+    "module": "bot"
+  }
+}

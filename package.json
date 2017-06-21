@@ -2,9 +2,12 @@
   "name": "hypebot",
   "version": "1.0.0",
   "description": "Chat bot for various Penn Hype Dance Crew group chats",
-  "main": "index.js",
+  "main": "lambda.js",
   "scripts": {
-    "test": "npm start"
+    "deploy": "claudia create --version dev --region us-east-1 --api-module api",
+    "release": "claudia set-version --version production",
+    "start": "ntl",
+    "setup-profile": "export AWS_PROFILE=claudia"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,16 @@
   "bugs": {
     "url": "https://github.com/mantism/HypeBot/issues"
   },
-  "homepage": "https://github.com/mantism/HypeBot#readme"
+  "homepage": "https://github.com/mantism/HypeBot#readme",
+  "devDependencies": {
+    "aws-sdk": "^2.74.0",
+    "claudia": "^2.13.0",
+    "lodash": "^4.17.4",
+    "ntl": "^1.2.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.74.0",
+    "claudia-bot-builder": "^2.15.0",
+    "huh": "^2.0.1"
+  }
 }

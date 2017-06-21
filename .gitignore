@@ -1,0 +1,16 @@
+*.swp
+node_modules
+dist
+build
+.tmp
+.eslintcache
+dump.rdb
+dbsize
+artifact.tar.gz
+artifact
+select
+.DS_Store
+redis-stable
+redis-stable.tar.gz
+*.log
+.env
