@@ -2,14 +2,14 @@
   "name": "hypebot",
   "version": "1.0.0",
   "description": "Chat bot for various Penn Hype Dance Crew group chats",
-  "main": "lambda.js",
+  "main": "bot.js",
   "scripts": {
     "deploy": "claudia create --version dev --region us-east-1 --api-module api",
     "release": "claudia set-version --version production",
     "start": "ntl",
     "setup-profile": "export AWS_PROFILE=claudia",
-    "build": "babel src --out-file bot.js"
-
+    "build": "babel src --out-file bot.js",
+    "update": "claudia update"
   },
   "repository": {
     "type": "git",
@@ -32,10 +32,15 @@
     "aws-sdk": "^2.74.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
+    "babel-preset-es2015": "^6.24.1",
     "claudia-bot-builder": "^2.15.0",
-    "huh": "^2.0.1"
+    "huh": "^2.0.1",
+    "request": "^2.81.0"
   },
   "babel": {
-    "presets": ["env", "es2015"]
+    "presets": [
+      "env",
+      "es2015"
+    ]
   }
 }
